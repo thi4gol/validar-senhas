@@ -1,66 +1,49 @@
-Claro, aqui está o conteúdo completo do arquivo README.md:
+# Verificador de Senha
 
-```markdown
-# Validador de Senha
-
-## Descrição
-Este projeto consiste em um aplicativo Java para validar a força de senhas digitadas pelo usuário de acordo com critérios de segurança pré-definidos. Ele oferece um menu simples onde o usuário pode escolher a opção de validar uma senha ou sair do programa.
+Este é um projeto Java 17 que implementa um verificador de senha, permitindo ao usuário inserir uma senha e validar se ela atende aos critérios de segurança especificados.
 
 ## Funcionalidades
-- **Validação de senha:** O usuário pode digitar uma senha para verificar se ela atende aos critérios de segurança estabelecidos.
-- **Critérios de segurança:**
+
+- **Validação de Senha**: O usuário pode inserir uma senha e verificar se ela atende aos seguintes critérios de segurança:
   - Pelo menos uma letra maiúscula.
   - Pelo menos uma letra minúscula.
   - Pelo menos um número.
   - Pelo menos um caractere especial.
-  - Não contém sequências comuns ("123456" ou "abcdef", case-insensitive).
-  - Não é uma palavra comum ("password", "123456" ou "qwerty", case-insensitive).
+  - Não contém sequências comuns (como "123456" ou "abcdef", sem distinção entre maiúsculas e minúsculas).
+  - Não é uma palavra comum (como "password", "123456" ou "qwerty", sem distinção entre maiúsculas e minúsculas).
   - Comprimento mínimo de 8 caracteres.
 
-## Tecnologias Utilizadas
-- **Linguagem de programação:** Java 17
-
 ## Estrutura do Projeto
-O projeto consiste em um único arquivo Java denominado `Menu.java`.
+
+O projeto é composto por duas classes:
+
+1. **Validacao**: Classe principal que inicia a aplicação e cria uma instância da classe Menu.
+2. **Menu**: Implementa as funcionalidades do verificador de senha, incluindo a lógica para mostrar o menu, validar a senha e limpar o console.
 
 ## Como Executar
-Para executar o programa, siga os passos abaixo:
 
-1. Certifique-se de ter o Java 17 instalado em sua máquina.
-2. Baixe o arquivo `Menu.java`.
-3. Abra um terminal na pasta onde o arquivo `Menu.java` está localizado.
-4. Compile o arquivo Java executando o seguinte comando:
-   ```
-   javac Menu.java
-   ```
-5. Após a compilação, execute o programa com o comando:
-   ```
-   java Menu
-   ```
-6. O programa será iniciado e você poderá interagir com o menu para validar senhas.
+Para executar o projeto, siga estas etapas:
 
-## Exemplo de Uso
-```java
-public class Main {
-    public static void main(String[] args) {
-        Menu menu = new Menu();
-        menu.loopPrincipal();
-    }
-}
-```
+1. Certifique-se de ter o Java 17 instalado em seu sistema.
+2. Compile os arquivos `Validacao.java` e `Menu.java`.
+3. Execute o arquivo compilado `Validacao.class`.
 
-## Contribuição
-Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas (issues) e pull requests com sugestões, correções ou melhorias.
+## Uso
+
+Ao executar o programa, o usuário será apresentado com um menu contendo uma opção para validar uma senha. Ao escolher essa opção, será solicitado que o usuário insira a senha. Após inserir a senha, o programa mostrará se a senha atende aos critérios de segurança especificados.
+
+## Contribuindo
+
+Se você quiser contribuir para este projeto, siga estas etapas:
+
+1. Faça um fork do projeto.
+2. Implemente suas alterações.
+3. Faça um pull request.
 
 ## Autor
-Este projeto foi desenvolvido por [seu_nome].
+
+Este projeto foi desenvolvido por Thiago Siqueira.
 
 ## Licença
-Este projeto está licenciado sob a Licença [Nome da Licença]. Consulte o arquivo LICENSE para obter mais informações.
 
----
-
-Esse README segue um modelo padrão para apresentação de projetos em repositórios. Certifique-se de personalizar as seções de acordo com as necessidades específicas do seu projeto.
-```
-
-Substitua `[seu_nome]` pelo seu nome e `[Nome da Licença]` pelo tipo de licença que você deseja aplicar ao seu projeto. Este é um modelo completo de README.md que fornece uma visão geral do projeto, instruções para execução, exemplo de uso, informações de contribuição, autor e licença.
+Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT).
